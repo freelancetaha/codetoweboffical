@@ -1,0 +1,156 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Admin Panel Layout */
+.admin {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 30px;
+    background-color: #f9f9f9;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Styling */
+input,
+textarea {
+    height: 50px;
+    padding: 10px;
+    background: rgba(223, 217, 217, 0.71);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #888;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* File Upload Input */
+input[type="file"] {
+    padding: 12px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+    border-color: #888;
+}
+
+/* Text Editor Controls */
+.text-editor-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Image and Video Preview */
+img,
+video {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Admin Panel Image Section */
+.admin .image-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        height: 45px;
+    }
+    textarea {
+        height: 160px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .admin {
+        padding: 10px;
+    }
+
+    .text-editor-controls {
+        flex-direction: column;
+    }
+}

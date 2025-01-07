@@ -1,0 +1,36 @@
+# Block access to sensitive or private directories
+User-agent: *
+Disallow: /posts
+
+# Allow all other directories
+Allow: /
+Allow: /admin
+
+# Block specific bots (example: BadBot)
+User-agent: BadBot
+Disallow: /
+
+# Sitemap for better indexing
+Sitemap: https://www.codetoweb.tech/sitemap.xml
+
+# Crawl-delay directive (useful for managing server load)
+Crawl-delay: 10
+
+# Block indexing of certain file types
+User-agent: *
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.zip$
+
+# Specific directives for Googlebot
+User-agent: Googlebot
+Disallow: /private
+Allow: /public
+
+# Specific directives for Bingbot
+User-agent: Bingbot
+Disallow: /test
+
+# Allow everything for specific user agents
+User-agent: FriendlyBot
+Allow: /

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 10rem;
+    height: 100vh;
+    width: 100%;
+}
+.about .para span{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.about .para hr{
+    width: 50%;
+}
+.about .para p{
+    font-size: 17px;
+    padding: 10px 10rem 0 0;
+}
+.about .para .sign{
+    font-size: 26px;
+    font-family: "Cedarville Cursive", serif;
+}
+.about .para .social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.about .img{
+    height: 100%;
+    width: 100%;
+}
+.about .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.icon{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+@media (max-width: 700px) {
+    .about{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        top: 1rem;
+        flex-direction: column;
+        padding: 0rem 1rem;
+    }
+    .about .para h1{
+        font-size: 50px;
+    }
+    .about .para p{
+        padding: 10px 1rem 0 0;
+    }
+    .about .img{
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 30rem;
+        display: none;
+    }
+}

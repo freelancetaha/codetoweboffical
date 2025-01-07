@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.man_co{
+    height: 24rem auto;
+    width: 100%;
+    padding: 0 0 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #eeeeee;
+    position: relative;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+.man_co .para{
+    padding: 0 5px;
+}
+.man_co .para h1{
+    font-size: 20px;
+}
+.man_co .para p{
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+.man_co .para a{
+    font-size: 19px;
+    padding: 5px 10px;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+    .man_co{
+        width: 100%;
+    }
+}

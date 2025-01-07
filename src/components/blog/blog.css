@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; /* Ensure consistency with fonts */
+}
+
+body {
+    background-color: #f1efefb4; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+}
+
+.blog {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 3rem;
+    background-color: #f1efefb4;
+}
+
+.blog .blog_content {
+    width: 50%;
+    margin: 0 auto; /* Centering content */
+    border: 1px solid #777777b4;
+    padding: 20px; /* Adjust padding for better spacing */
+    background-color: #fff; /* White background for content */
+    border-radius: 8px; /* Rounded corners for content */
+}
+
+.blog .blog_content h1,
+.blog .blog_content h2 {
+    font-family: "Roboto", serif;
+    padding: 10px 0;
+    line-height: 1.4;
+    color: #222; /* Dark text for headings */
+}
+
+.blog .blog_content h1 {
+    font-size: 32px;
+}
+
+.blog .blog_content h2 {
+    font-size: 24px;
+}
+
+.blog .blog_content ul {
+    padding: 10px 20px;
+}
+
+.blog .blog_content ul li {
+    padding: 5px 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.blog .blog_content p {
+    font-size: 17px;
+    padding: 0 0 10px 0;
+    line-height: 1.6;
+    color: #444; /* Dark text for paragraph */
+}
+
+.post {
+    margin-bottom: 30px;
+}
+
+.post_image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.post .post_image {
+    max-width: 100%;
+    margin: 20px 0; /* Add more spacing around images */
+}
+
+/* Like button styling */
+.like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.like-button:disabled {
+    background-color: #ddd; /* Disabled button state */
+    cursor: not-allowed;
+}
+
+.like-button:hover {
+    background-color: #e0e0e0; /* Hover effect */
+}
+/* Video Styling */
+.post_video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  .post-username {
+    font-size: 17px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 5px;
+  }
+    
+
+/* Mobile and Tablet Responsive Design */
+@media (max-width: 768px) {
+    .blog {
+        padding: 6rem 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .blog .blog_content {
+        width: 90%; /* Adjust content width for smaller screens */
+        padding: 20px; /* Ensure content has enough padding */
+    }
+
+    .blog .blog_content h1 {
+        font-size: 28px; /* Decrease font size on smaller screens */
+    }
+
+    .blog .blog_content h2 {
+        font-size: 20px; /* Decrease font size for subtitles */
+    }
+
+    .blog .blog_content p {
+        font-size: 16px; /* Adjust paragraph text size */
+    }
+}
+
+@media (max-width: 600px) {
+    .blog {
+        flex-direction: column;
+        padding: 6rem 0px;
+    }
+
+    .like-button {
+        width: 50px;
+    }
+
+    .blog .blog_content {
+        width: 100%;
+        padding: 20px 10px; /* Ensure padding inside the content */
+    }
+
+    .blog .blog_content h2 {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    .blog .blog_content p {
+        font-size: 16px;
+        padding: 0 0 8px 0;
+    }
+}
